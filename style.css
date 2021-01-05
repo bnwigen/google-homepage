@@ -8,6 +8,7 @@ body {
 
 body {
   background-color: #ffffff;
+  display: grid;
 }
 
 a {
@@ -16,6 +17,7 @@ a {
 
 .gl-nav {
   padding-top: 15px;
+  font-size: 0.85em;
 }
 
 .gl-nav a {
@@ -25,6 +27,58 @@ a {
   opacity: 0.75;
 }
 
+.gl-srh-control {
+  position: absolute;
+  margin: 0 auto;
+}
+
+.gl-search {
+  background: #ffffff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.gl-sh-i {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.gl-mic-i {
+  flex: 1 0 auto;
+}
+
 .colophon {
   background-color: #f2f2f2;
+  border-top: 1px solid #dadce0;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  height: 45px;
+  width: 100%;
+}
+
+.colophon a {
+  color: #70757a;
+  display: inline-block;
+  padding-left: 27px;
+}
+
+.colophon .fsl {
+  margin-left: 30px;
+  float: left;
+  min-width: 30%;
+  text-align: left;
+}
+
+.colophon .fsr {
+  margin-right: 30px;
+  float: right;
+  min-width: 30%;
+  text-align: right;
 }
