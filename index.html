@@ -11,59 +11,59 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="gl-nav">
-        <div class="gl-nav-lft">
-          <a href="#">About</a>
-          <a href="#">Store</a>
-        </div>
-        <div class="gl-nav-rgh">
-          <a href="#">Gmail</a>
-          <a href="#">Images</a>
-          <a href="#"><i class="fas fa-th"></i></a>
-          <a href="#"><img src="images/unnamed.jpg" alt="" /></a>
-        </div>
-      </div>
-    </header>
+    <div class="page">
+      <div class="page__container">
+        <!-- Navigation -->
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#"><i class="fas fa-th"></i></a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
 
-    <main>
-      <div>
-        <img
-          alt="Google"
-          height="92"
-          src="images/googlelogo_color_272x92dp.png"
-        />
-      </div>
-      <form action="search">
-        <div class="gl-srh-control">
-          <div class="gl-search">
-            <div class="gl-sh-i">
-              <span><i class="far fa-search"></i></span>
-            </div>
-            <div>
-              <input type="text" maxlength="2048" />
-            </div>
-            <div class="gl-mic-i">
-              <span><i class="fad fa-microphone"></i></span>
+        <main>
+          <div class="hero">
+            <img
+              alt="Google"
+              height="92"
+              src="images/googlelogo_color_272x92dp.png"
+            />
+              <div class="search-area">
+                <span><i class="far fa-search"></i></span>
+                <input type="text" maxlength="2048" />
+                <span><i class="fad fa-microphone"></i></span>
+              </div>
+              <div>
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
             </div>
           </div>
-        </div>
-      </form>
-      <div></div>
-    </main>
+        </main>
 
-    <footer class="colophon">
-      <span class="fsl">
-        <a href="#">Advertising</a>
-        <a href="#">Business</a>
-        <a href="#">How Search Works</a>
-      </span>
-      <a href="#"><i class="fad fa-leaf"></i> Carbon neutral since 2007</a>
-      <span class="fsr">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Settings</a>
-      </span>
-    </footer>
+        <footer>
+          <section class="colophon">
+            <span class="fsl">
+              <a href="#">Advertising</a>
+              <a href="#">Business</a>
+              <a href="#">How Search Works</a>
+            </span>
+            <a href="#"><i class="fad fa-leaf"></i> Carbon neutral since 2007</a>
+            <span class="fsr">
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Settings</a>
+            </span>
+          </section>
+        </footer>
+
+      </div>
+    </div>
+
   </body>
 </html>

@@ -1,63 +1,124 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
+:root {
+  --color-white: #ffffff;
+  --color-gray-100: #d0d0d0;
+  --color-gray-200: #c0c0c0;
+  --color-gray-300: #b8b8b8;
+  --color-gray-400: #a9a9a9;
+  --color-gray-500: #707070;
+}
+
+*,
+*::after,
+*::before {
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff;
-  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-white);
 }
 
-a {
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.page__container {
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Links */
+a:link,
+a:visited {
   text-decoration: none;
+  color: var(--color-gray-500);
+  font-size: 1em;
+  padding: .5em;
 }
 
-.gl-nav {
-  padding-top: 15px;
-  font-size: 0.85em;
+a:hover {
+  text-decoration: underline;
 }
 
-.gl-nav a {
-  color: #000000;
-  padding-left: 15px;
+/* Navigation */
+.nav-bar {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  padding: 15px;
+}
+
+li {
   display: inline-block;
-  opacity: 0.75;
 }
 
-.gl-srh-control {
-  position: absolute;
-  margin: 0 auto;
-}
-
-.gl-search {
-  background: #ffffff;
+.hero {
   display: flex;
-  border: 1px solid #dfe1e5;
-  border-radius: 24px;
-  z-index: 3;
-  height: 44px;
-  margin: 0 auto;
-}
-
-.gl-sh-i {
-  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
   align-items: center;
-  padding-right: 13px;
-  margin-top: -5px;
+  margin: 50px 0;
 }
 
-.gl-mic-i {
-  flex: 1 0 auto;
+.search-area {
+  border: 1px solid var(--color-gray-400);
+  border-radius: 24px;
+  line-height: 24px;
+  height: 40px;
+  margin: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-area i {
+  height: 20px;
+  line-height: 24px;
+  width: 20px;
+}
+
+input {
+  border: none;
+  width: 350px;
+  font-size: 1em;
+}
+
+input:focus {
+    outline: 0;
+}
+
+button {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color:#f2f2f2;
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+}
+
+.footer {
+  width: 100%;
 }
 
 .colophon {
   background-color: #f2f2f2;
   border-top: 1px solid #dadce0;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 25px;
   text-align: center;
   height: 45px;
   width: 100%;
@@ -70,7 +131,6 @@ a {
 }
 
 .colophon .fsl {
-  margin-left: 30px;
   float: left;
   min-width: 30%;
   text-align: left;
